@@ -46,7 +46,7 @@ class PlaylistDownloader:
                 break
 
             except Exception as ex:
-                # print(f"Error: Thread {thread_index} encountered unexpected error: {ex} retying download!")
+                print(f"Error: Thread {thread_index} encountered unexpected error: {ex} retying download!")
                 # traceback.print_exception(ex)
                 if video is not None:
                     self.songs_queue.put(video)
